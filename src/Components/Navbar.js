@@ -23,6 +23,17 @@ const Navbar = () => {
                 <Link to='main' className='logo'>
                     <img src={logo} alt="" />
                 </Link>
+                <input className='menu-btn' type='checkbox' id='menu-btn'/>
+                <label className="menu-icon" for='menu-btn'>
+                    <span className="nav-icon"></span>
+                </label>
+                <ul className="menu">
+                    <li><Link to="#">Home</Link></li>
+                    <li><Link to="#">Products</Link></li>
+                    <li><Link to="#">About</Link></li>
+                    <li><Link to="#">Contact</Link></li>
+
+                </ul>
 
             </nav>
             
