@@ -1,9 +1,13 @@
-import React, {useEffect, useState} from "react";
+import React, {Fragment, useEffect, useState} from "react";
 import './App.css';
 import './index.css'
 import { css } from "@emotion/react";
 import {PropagateLoader} from "react-spinners";
 import Navbar from "./Components/Navbar";
+import Header from "./Components/Header";
+import Products from "./Components/Products";
+import About from "./Components/About";
+import Contact from "./Components/Contact";
 
 function App() {
 
@@ -26,7 +30,17 @@ function App() {
         {
             loading?<PropagateLoader color={"#0af5ed"} loading={loading} css={override} size={40}/>:
 
-               <Navbar />
+                <Fragment>
+
+                    <Navbar />
+                    <Header />
+                    <Products />
+                    <About />
+                    <Contact />
+
+                </Fragment>
+
+
         }
     </div>
   );

@@ -20,7 +20,7 @@ const Navbar = () => {
         <Fragment>
 
             <nav className={nav?"nav active":"nav"}>
-                <Link to='main' className='logo'>
+                <Link to='main' className='logo' smooth={true} duration={500}>
                     <img src={logo} alt="" />
                 </Link>
                 <input className='menu-btn' type='checkbox' id='menu-btn'/>
@@ -28,10 +28,10 @@ const Navbar = () => {
                     <span className="nav-icon"></span>
                 </label>
                 <ul className="menu">
-                    <li><Link to="#">Home</Link></li>
-                    <li><Link to="#">Products</Link></li>
-                    <li><Link to="#">About</Link></li>
-                    <li><Link to="#">Contact</Link></li>
+                    <li><Link to="main" smooth={true} duration={500}>Home</Link></li>
+                    <li><Link to="products" smooth={true} duration={500}>Products</Link></li>
+                    <li><Link to="about" smooth={true} duration={500}>About</Link></li>
+                    <li><Link to="contact" smooth={true} duration={500}>Contact</Link></li>
 
                 </ul>
 
